@@ -1,0 +1,61 @@
+<script>
+	function call(){
+		
+
+
+    ip= "<center><table border='1' width='700'><tr><td><b>STUDENT NAME:</b>"+sname.value+"</td><td><b>FATHER'S NAME:</b>"+fname.value+"</td></tr></center>"
+    ip+="<center><tr><td><b> ROLL  NO:</b>"+rollno.value+"</td><td><b>SCHOOL NAME:</b>"+schoolname.value+"</td></tr></table></center><br>"
+    ip+="<center><b><caption>MARKSHEET</caption></center></b>"
+    ip+="<center><table border='1' width='700'><tr><td><b>Code</b></td><td><b>Name</b></td><td><b>Minimum Marks</b></td><td><b>Maximum marks</b></td><td><b>Marks Obtain<b></td><td><b>Remark<b></td></tr></center>"
+    ip+="<center><tr><td>001<br>002<br>003<br>004<br>005</td><td>HINDI<br>ENGLISH<br>PHYSICS<br>CHEMISTRY<br>MATHS<br>TOTAL</td><td>35<br>35<br>35<br>35<br>35</td><td>100<br>100<br>100<br>100<br>100</td><td>"+hindi.value+"<br>"+english.value+"<br>"+physics.value+"<br>"+chemistry.value+"<br>"+maths.value+"</td></tr></table></center>"
+
+
+
+                              
+
+
+
+
+
+
+
+    
+    
+    
+result.innerHTML=ip
+
+
+
+
+
+
+}
+
+
+</script>
+
+<html>
+<b>Student Name:</b><br><br>
+<input type="text" id="sname"><br><br>
+<b>Roll No:</b><br><br>
+<input type="number" id="rollno"><br><br>
+<b>Father's Name:</b><br><br>
+<input type="text" id="fname"><br><br>
+<b>School Name:</b><br><br>
+<input type="text" id="schoolname"><br><br>
+<b>hindi:</b>
+<input type="text" id="hindi">
+<b>English:</b>
+<input type="text" id="english">
+<b>Physics:</b>
+<input type="text" id="physics">
+<b>Chemistry:</b>
+<input type="text" id="chemistry">
+<b>Maths:</b>
+<input type="text" id="maths">
+<br><br>
+<center><input type="submit" value="get result" onclick="call()" ></center>
+
+<div id="result"></div>
+
+</html>
